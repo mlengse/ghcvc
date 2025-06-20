@@ -149,3 +149,55 @@ Kontribusi untuk meningkatkan kustomisasi Copilot ini sangat diterima:
 ---
 
 Dibuat dan dikelola oleh @mlengse dan tim. Untuk pertanyaan atau dukungan lebih lanjut, silakan buat issue dalam repository ini.
+
+## 📦 Penggunaan Sebagai Submodule
+
+Repository ini dapat digunakan sebagai submodule Git untuk menerapkan kustomisasi GitHub Copilot di proyek Anda. Berikut langkah-langkahnya:
+
+1. **Tambahkan repository ini sebagai submodule Git**:
+
+```bash
+git submodule add https://github.com/mlengse/ghcvc.git .github
+```
+
+2. **Atau jika Anda sudah memiliki folder `.github`**:
+
+```bash
+git submodule add https://github.com/mlengse/ghcvc.git .github/copilot
+```
+
+3. **Perbarui dan inisialisasi submodule**:
+
+```bash
+git submodule update --init --recursive
+```
+
+### Contoh File `.gitmodules`
+
+Berikut adalah contoh file `.gitmodules` yang akan dibuat otomatis setelah menambahkan repository ini sebagai submodule:
+
+```
+[submodule ".github"]
+    path = .github
+    url = https://github.com/mlengse/ghcvc.git
+    branch = main
+```
+
+Atau jika ditambahkan ke folder `.github/copilot`:
+
+```
+[submodule ".github/copilot"]
+    path = .github/copilot
+    url = https://github.com/mlengse/ghcvc.git
+    branch = main
+```
+
+### Update Submodule
+
+Untuk memperbarui submodule ke versi terbaru:
+
+```bash
+git submodule update --remote --merge
+```
+
+---
