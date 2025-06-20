@@ -1,0 +1,61 @@
+# This CODEOWNERS file defines who is responsible for code in the repository
+# Each line is a file pattern followed by one or more owners
+
+# These owners will be the default owners for everything in the repository
+* @mlengse
+
+# Infrastructure and configuration related files
+*.yml @mlengse
+*.yaml @mlengse
+*.json @mlengse
+*.config.js @mlengse
+Dockerfile @mlengse
+docker-compose.yml @mlengse
+.github/* @mlengse
+
+# Front-end code
+/frontend/ @frontend-team
+*.js @frontend-team
+*.jsx @frontend-team
+*.ts @frontend-team
+*.tsx @frontend-team
+*.css @frontend-team
+*.scss @frontend-team
+*.html @frontend-team
+
+# Back-end code
+/backend/ @backend-team
+/api/ @backend-team
+*.py @backend-team
+*.java @backend-team
+*.go @backend-team
+
+# Database related files
+/db/ @database-team
+*.sql @database-team
+**/migrations/ @database-team
+
+# Documentation
+/docs/ @documentation-team
+*.md @documentation-team
+
+# Tests
+/tests/ @qa-team
+**/*.test.js @qa-team
+**/*.spec.js @qa-team
+**/*_test.go @qa-team
+**/*_test.py @qa-team
+
+# Security sensitive areas require security team review
+/security/ @security-team
+**/auth/ @security-team
+**/authentication/ @security-team
+**/authorization/ @security-team
+
+# Specific package files
+package.json @devops-team
+package-lock.json @devops-team
+yarn.lock @devops-team
+requirements.txt @devops-team
+go.mod @devops-team
+go.sum @devops-team
