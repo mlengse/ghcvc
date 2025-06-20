@@ -11,6 +11,7 @@ Repository ini berisi konfigurasi kustomisasi GitHub Copilot untuk meningkatkan 
 - [Konfigurasi CODEOWNERS](#konfigurasi-codeowners)
 - [Cara Penggunaan](#cara-penggunaan)
 - [Kontribusi](#kontribusi)
+- [Penggunaan Sebagai Submodule](#penggunaan-sebagai-submodule)
 
 ## 🗂️ Struktur Repository
 
@@ -49,6 +50,12 @@ Repository ini berisi konfigurasi kustomisasi GitHub Copilot untuk meningkatkan 
     ├── dokumentasi-indonesia.prompt.md # Buat dokumentasi dalam Bahasa Indonesia
     ├── terjemahan-error.prompt.md     # Terjemahkan pesan error ke Bahasa Indonesia
     └── review-kode-indonesia.prompt.md # Review kode dengan komentar Bahasa Indonesia
+
+.vscode/
+├── settings.json                      # Template konfigurasi VSCode untuk GitHub Copilot
+└── README.md                          # Dokumentasi konfigurasi VSCode
+
+.gitignore.template                    # Template .gitignore untuk berbagai bahasa
 ```
 
 ## 📝 Instruksi Kustomisasi
@@ -198,6 +205,52 @@ Untuk memperbarui submodule ke versi terbaru:
 
 ```bash
 git submodule update --remote --merge
+```
+
+### Konfigurasi VSCode (Opsional)
+
+Repository ini juga menyediakan template konfigurasi VSCode yang dioptimalkan untuk GitHub Copilot di `.vscode/settings.json`. File ini berisi:
+
+- **Konfigurasi GitHub Copilot**: Pengaturan optimal untuk fitur AI dan chat
+- **Editor Settings**: Konfigurasi untuk pengalaman coding yang lebih baik
+- **Code Quality**: Auto-formatting dan code actions on save
+- **File Associations**: Asosiasi file untuk instruksi, prompt, dan chatmode Copilot
+- **Language Specific**: Pengaturan khusus untuk berbagai bahasa pemrograman
+- **Git Integration**: Integrasi Git yang lebih baik
+- **Terminal Configuration**: Pengaturan terminal terintegrasi
+
+Untuk menggunakan konfigurasi ini:
+
+1. **Jika menggunakan sebagai submodule di `.github`**:
+   ```bash
+   cp .github/.vscode/settings.json .vscode/settings.json
+   ```
+
+2. **Jika menggunakan sebagai submodule di `.github/copilot`**:
+   ```bash
+   cp .github/copilot/.vscode/settings.json .vscode/settings.json
+   ```
+
+3. **Atau copy manual**: Salin isi file `.vscode/settings.json` dari repository ini ke file VSCode settings proyek Anda.
+
+### Template .gitignore
+
+Repository ini juga menyediakan template `.gitignore.template` yang komprehensif untuk berbagai bahasa dan framework:
+
+- **Multi-language Support**: Mencakup JavaScript/Node.js, Python, Java, Go, Rust, Flutter/Dart
+- **IDE Files**: Mengecualikan file VSCode, IntelliJ IDEA, dan editor lainnya
+- **Build Artifacts**: Mengecualikan folder build, dist, dan file yang dihasilkan
+- **Environment Files**: Mengecualikan file `.env` dan konfigurasi lokal
+- **OS Files**: Mengecualikan file sistem seperti `.DS_Store`, `Thumbs.db`
+
+Untuk menggunakan template ini:
+
+```bash
+# Copy template sebagai .gitignore
+cp .gitignore.template .gitignore
+
+# Atau jika menggunakan submodule
+cp .github/.gitignore.template .gitignore
 ```
 
 ---
