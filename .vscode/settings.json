@@ -1,25 +1,25 @@
 {
   // GitHub Copilot Configuration
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": true,
-    "plaintext": true,
-    "markdown": true
-  },
-  "chat.modeFilesLocations": {
-    ".github/chatmodes": true,
-    "/Users/vscode/repos/chatmodes": true
-  },
-  "chat.instructionsFilesLocations": {
-    "copilot-instructions": true,
-    "instructions": true,
-    "instructions/copilot": true
-  },
-  "chat.promptFilesLocations": {
-    "copilot-prompts": true,
-    "prompts": true,
-    "prompts/copilot": true
-  },
+  // "github.copilot.enable": {
+  //   "*": true,
+  //   "yaml": true,
+  //   "plaintext": true,
+  //   "markdown": true
+  // },
+  // "chat.modeFilesLocations": {
+  //   ".github/chatmodes": true,
+  //   "/Users/vscode/repos/chatmodes": true
+  // },
+  // "chat.instructionsFilesLocations": {
+  //   "copilot-instructions": true,
+  //   "instructions": true,
+  //   "instructions/copilot": true
+  // },
+  // "chat.promptFilesLocations": {
+  //   "copilot-prompts": true,
+  //   "prompts": true,
+  //   "prompts/copilot": true
+  // },
   // "github.copilot.chat.localeOverride": "auto",
   // "github.copilot.chat.followUps": "on",
   // "github.copilot.chat.welcomeMessage": "always",
