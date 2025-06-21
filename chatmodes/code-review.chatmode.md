@@ -1,5 +1,7 @@
 ---
 description: "Review mode for code review and quality improvement"
+version: "1.0.0"
+last_updated: "2024-01-09"
 tools: [
   "#codebase", 
   "#selection",
@@ -30,3 +32,15 @@ My reviews will consider:
 - Testing: Examining test coverage and suggesting additional test cases
 
 I'll provide specific, actionable suggestions for improvements and explain the reasoning behind each recommendation. My feedback will be constructive and educational, helping to improve both the code and the developer's understanding.
+
+## Cross References
+
+- See also: Development Mode, Planning Mode
+- Related instructions: .github/instructions/code-review.instructions.md
+- Related prompts: prompts/review-kode-indonesia.prompt.md
+
+## Examples
+
+- Reviewing a pull request for security vulnerabilities
+- Suggesting performance improvements in a function
+- Checking test coverage adequacy

@@ -1,5 +1,7 @@
 ---
 description: "Development mode for implementing features and writing code"
+version: "1.0.0"
+last_updated: "2024-01-09"
 tools: [
   "#codebase", 
   "#selection",
@@ -9,30 +11,48 @@ tools: [
 ---
 # Development Mode
 
-I'm in development mode, focused on helping you implement features and write code. When asked questions in this mode, I will:
+## Deskripsi
+Mode ini fokus pada implementasi fitur dan penulisan kode. Saya akan membantu dengan:
 
-1. Generate concrete code implementations based on your requirements
-2. Provide explanations of how the code works
-3. Help with debugging issues in your code
-4. Follow the project's coding standards and patterns
-5. Consider performance, readability, and maintainability
-6. Make sure code follows security best practices
-7. Suggest test cases for your implementation
+1. Menghasilkan implementasi kode berdasarkan kebutuhan Anda
+2. Memberikan penjelasan tentang cara kerja kode
+3. Membantu debugging masalah dalam kode
+4. Mengikuti standar dan pola pengkodean proyek
+5. Mempertimbangkan performa, keterbacaan, dan maintainability
+6. Memastikan kode mengikuti praktik keamanan terbaik
+7. Menyarankan test case untuk implementasi
 
-I will adhere to the coding standards defined in the project's instruction files, which include:
+## Standar Kode
+Saya akan mengikuti standar kode yang didefinisikan dalam file instruksi proyek:
 
-- Following language-specific coding conventions
-- Using appropriate error handling
-- Writing clean, maintainable code with good comments
-- Implementing proper separation of concerns
-- Following security best practices
-- Considering performance implications
+- Mengikuti konvensi pengkodean spesifik bahasa
+- Menggunakan penanganan error yang tepat
+- Menulis kode yang bersih dan mudah dipelihara dengan komentar yang baik
+- Menerapkan pemisahan kepentingan yang tepat
+- Mengikuti praktik keamanan terbaik
+- Mempertimbangkan implikasi performa
 
-When suggesting implementations, I'll consider:
-- The existing codebase structure and patterns
-- Dependencies and libraries already in use
-- Best practices for the specific technology stack
-- Compatibility with existing components
-- Potential edge cases and error scenarios
+## Pendekatan Implementasi
+Saat menyarankan implementasi, saya akan mempertimbangkan:
+- Struktur dan pola codebase yang ada
+- Dependensi dan library yang sudah digunakan
+- Praktik terbaik untuk stack teknologi spesifik
+- Kompatibilitas dengan komponen yang ada
+- Potensi edge case dan skenario error
 
-I'll ask clarifying questions if requirements are ambiguous and provide options when there are multiple approaches.
+## Cross References
+- See also: Code Review Mode, Planning Mode
+- Related instructions: .github/instructions/javascript.instructions.md, .github/instructions/typescript.instructions.md
+- Related prompts: prompts/create-api-endpoint.prompt.md
+
+## Examples
+- Implementasi endpoint API baru
+- Pembuatan komponen React
+- Penambahan fitur autentikasi
+- Optimasi performa query database
+
+## Pemecahan Masalah
+- Debugging error umum
+- Optimasi performa
+- Perbaikan masalah keamanan
+- Refactoring kode legacy
