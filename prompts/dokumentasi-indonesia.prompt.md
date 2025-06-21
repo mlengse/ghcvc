@@ -1,5 +1,5 @@
 ---
-mode: "ask"
+mode: "agent"
 description: "Menghasilkan dokumentasi dalam Bahasa Indonesia"
 ---
 # Generator Dokumentasi Bahasa Indonesia
