@@ -1,5 +1,5 @@
 ---
-mode: "ask"
+mode: "agent"
 description: "Design custom chat mode for specific project role"
 ---
 # Custom Chat Mode Generator

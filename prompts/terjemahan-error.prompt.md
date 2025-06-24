@@ -1,5 +1,5 @@
 ---
-mode: "ask"
+mode: "agent"
 description: "Menerjemahkan dan menjelaskan pesan error dalam Bahasa Indonesia"
 ---
 # Penerjemah Pesan Error
