@@ -1,5 +1,5 @@
 ---
-mode: "ask"
+mode: "agent"
 description: "Generate architecture-specific instructions"
 ---
 # Architecture-Specific Instructions Generator

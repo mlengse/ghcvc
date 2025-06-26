@@ -1,5 +1,5 @@
 ---
-mode: "ask"
+mode: "agent"
 description: "Design custom prompt template for recurring project task"
 ---
 # Custom Prompt Template Generator

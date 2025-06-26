@@ -1,5 +1,5 @@
 ---
-mode: "edit"
+mode: "agent"
 description: "Create a new API endpoint"
 ---
 # Create a New API Endpoint

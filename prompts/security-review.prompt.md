@@ -1,5 +1,5 @@
 ---
-mode: "edit"
+mode: "agent"
 description: "Perform a security review of code"
 ---
 # Security Code Review

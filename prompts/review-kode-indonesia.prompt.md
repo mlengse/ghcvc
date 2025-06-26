@@ -1,5 +1,5 @@
 ---
-mode: "ask"
+mode: "agent"
 description: "Melakukan review kode dengan komentar dalam Bahasa Indonesia"
 ---
 # Review Kode dalam Bahasa Indonesia

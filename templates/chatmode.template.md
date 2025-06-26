@@ -1,5 +1,4 @@
 ---
-mode: "agent"
 description: "Deskripsi singkat tentang tujuan mode chat ini"
 version: "1.0.0"
 last_updated: "YYYY-MM-DD"

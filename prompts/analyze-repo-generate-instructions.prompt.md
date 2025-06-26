@@ -1,5 +1,5 @@
 ---
-mode: "ask"
+mode: "agent"
 description: "Analyze repository and generate custom instructions"
 ---
 # Repository Analysis and Instructions Generation

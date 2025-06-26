@@ -1,5 +1,5 @@
 ---
-mode: "edit"
+mode: "agent"
 description: "Generate unit tests for a function or class"
 ---
 # Generate Unit Tests
