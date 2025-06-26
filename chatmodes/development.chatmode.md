@@ -1,12 +1,10 @@
 ---
 description: "Development mode for implementing features and writing code"
-version: "1.0.0"
-last_updated: "2024-01-09"
 tools: [
-  "#codebase", 
-  "#selection",
-  "#problems",
-  "#changes"
+  "codebase",
+  "selection",
+  "problems",
+  "changes"
 ]
 ---
 # Development Mode

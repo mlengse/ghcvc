@@ -1,12 +1,10 @@
 ---
 description: "Deskripsi singkat tentang tujuan mode chat ini"
-version: "1.0.0"
-last_updated: "YYYY-MM-DD"
 tools: [
-  "#codebase",
-  "#selection",
-  "#problems",
-  "#changes"
+  "codebase",
+  "selection",
+  "problems",
+  "changes"
 ]
 ---
 

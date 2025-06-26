@@ -1,3 +1,8 @@
+---
+version: 1.0.0
+last_updated: 2025-06-21
+---
+
 # Panduan Umum Penulisan Kode Proyek
 
 Panduan ini berlaku untuk seluruh kode yang dihasilkan oleh GitHub Copilot untuk proyek ini.
@@ -66,8 +71,3 @@ Panduan ini berlaku untuk seluruh kode yang dihasilkan oleh GitHub Copilot untuk
 - Dokumentasikan parameter dan nilai kembali fungsi
 - Tambahkan contoh penggunaan untuk fungsi yang kompleks
 - Pastikan dokumentasi selalu diperbarui sesuai perubahan kode
-
-
-## Versi dan Pembaruan
-version: 1.0.0
-last_updated: 2025-06-21

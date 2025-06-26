@@ -1,5 +1,5 @@
 ---
-applyTo: "agent"
+applyTo: "**"
 ---
 # Agent Mode Instructions
 

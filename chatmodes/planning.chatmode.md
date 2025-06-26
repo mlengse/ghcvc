@@ -1,12 +1,10 @@
 ---
 description: "Mode perencanaan untuk arsitektur dan desain proyek"
-version: "1.0.0"
-last_updated: "2024-01-09"
 tools: [
-  "#codebase", 
-  "#fetch",
-  "#selection",
-  "#github"
+  "codebase",
+  "fetch",
+  "selection",
+  "github"
 ]
 ---
 # Mode Perencanaan Proyek

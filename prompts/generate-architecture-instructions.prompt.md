@@ -9,53 +9,36 @@ description: "Generate architecture-specific instructions"
 First, analyze the architectural patterns present in the repository:
 
 1. **Architectural Pattern**: Identify the primary architectural pattern(s) in use (e.g., Clean Architecture, MVVM, Hexagonal, Microservices)
-
 2. **Layer Separation**: How are concerns separated (e.g., presentation, business logic, data access)
-
 3. **Component Communication**: How do components interact within and across layers
-
 4. **Dependency Management**: How dependencies are managed and injected
-
 5. **Cross-Cutting Concerns**: How aspects like logging, error handling, and security are addressed
 
 ## Custom Instructions Creation
 
-Based on this analysis, generate a custom instructions file (`.instructions.md`) that includes:
+Berdasarkan analisis di atas, buat file instructions dengan format dan penamaan berikut:
 
-1. **Front Matter**:
-   - Appropriate file pattern to apply these instructions to
-   - Any other relevant metadata
+- Simpan file sebagai `instructions/<nama-arsitektur>.instructions.md`.
+- Gunakan metadata front matter berikut di bagian atas file:
+  ```yaml
+  ---
+  applyTo: "**/*.ext" # sesuaikan glob pattern file yang relevan
+  version: "1.0.0"
+  last_updated: "YYYY-MM-DD"
+  ---
+  ```
 
-2. **Architecture Overview**:
-   - Brief description of the architectural pattern
-   - Key principles that guide this architecture
-   - Visualization of the architecture (described textually)
+Isi file instructions harus mencakup:
 
-3. **Layer-Specific Guidelines**:
-   - Instructions for each architectural layer
-   - Responsibilities and boundaries of each layer
-   - How components within each layer should be structured
-   - Patterns specific to each layer
+1. **Architecture Overview**
+2. **Layer-Specific Guidelines**
+3. **Cross-Layer Communication**
+4. **Testing Approach**
+5. **Common Anti-patterns**
+6. **Implementation Guidance**
 
-4. **Cross-Layer Communication**:
-   - How components should communicate across layers
-   - Dependency direction and rules
-   - Data transfer patterns between layers
-
-5. **Testing Approach**:
-   - How different architectural components should be tested
-   - Mocking strategies for dependencies
-   - Test scope recommendations for each layer
-
-6. **Common Anti-patterns**:
-   - Architecture violations to avoid
-   - Common mistakes when implementing this architecture
-   - Remediation strategies for architectural drift
-
-## Implementation Guidance
-
-Provide guidance on:
-- How to apply these architectural instructions across the codebase
-- How to ensure new code follows the architectural patterns
-- How to refactor existing code that violates the architecture
-- How to evolve the architecture as the project grows
+Berikan instruksi tentang:
+- Di mana menyimpan file instructions di struktur repository (`instructions/`)
+- Cara menggunakan instructions di dalam VS Code
+- Cara membagikan instructions ke anggota tim
+- Cara mengembangkan instructions sesuai kebutuhan proyek

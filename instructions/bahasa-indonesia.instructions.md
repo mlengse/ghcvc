@@ -10,6 +10,7 @@ applyTo: "**"
 - Hindari penggunaan slang atau bahasa tidak baku kecuali diminta secara spesifik
 - Untuk istilah teknis yang tidak memiliki padanan dalam Bahasa Indonesia, gunakan istilah aslinya dengan format *italic* atau dalam tanda kutip
 - Jelaskan istilah teknis jika diperlukan untuk memastikan pemahaman yang jelas
+- Gunakan untuk comment dalam kode, dokumentasi, dan pesan pengguna
 
 ## Gaya Komunikasi
 

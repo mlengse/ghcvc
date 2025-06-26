@@ -15,32 +15,40 @@ First, analyze the current repository to understand:
 
 ## Chat Mode Definition
 
-Based on this role and context, generate a custom chat mode file (`.chatmode.md`) that includes:
+Berdasarkan analisis di atas, buat file chatmode dengan format dan penamaan berikut:
 
-1. **Front Matter**:
-   - A clear, concise description of the chat mode's purpose
-   - The appropriate tools required for this role (e.g., #codebase, #selection, #problems)
-   - Any other relevant metadata
+- Simpan file sebagai `chatmodes/<nama-mode>.chatmode.md`.
+- Gunakan metadata front matter berikut di bagian atas file:
+  ```yaml
+  ---
+  description: "Deskripsi singkat tentang tujuan mode chat ini"
+  tools: ["codebase", "selection", ...] # sesuaikan tools yang dibutuhkan
+  ---
+  ```
 
-2. **Main Instructions**:
-   - A clear introduction explaining the purpose and focus of this chat mode
-   - Specific guidance on how the AI should approach tasks in this role
-   - Domain-specific knowledge and context relevant to this role
-   - Common patterns and practices for this role in the project
-   - Boundaries of responsibility for this role
+Isi file chatmode harus mencakup:
 
-3. **Task-Specific Guidelines**:
-   - Instructions for handling common tasks for this role
-   - Specific approaches for solving typical problems
-   - Integration points with other roles or systems
-   - Quality standards and requirements specific to this role
+1. **Main Instructions**:
+   - Penjelasan tujuan dan fokus mode chat
+   - Panduan spesifik untuk peran/role
+   - Pengetahuan domain dan pola umum
+   - Batasan dan tanggung jawab
 
-4. **Communication Style**:
-   - How responses should be structured for this role
-   - Level of technical detail expected
-   - Appropriate terminology and jargon for the domain
-   - Balance between explanation and direct solution
+2. **Task-Specific Guidelines**:
+   - Instruksi untuk tugas umum
+   - Pendekatan pemecahan masalah
+   - Integrasi dengan peran/sistem lain
+   - Standar kualitas khusus
+
+3. **Communication Style**:
+   - Struktur respons
+   - Tingkat detail teknis
+   - Terminologi dan gaya bahasa
 
 ## Implementation Guidance
 
-Provide instructions on where to place the generated chat mode file and how to start using it within VS Code.
+Berikan instruksi tentang:
+- Di mana menyimpan file chatmode di struktur repository (`chatmodes/`)
+- Cara menggunakan chatmode di dalam VS Code
+- Cara membagikan chatmode ke anggota tim
+- Cara mengembangkan chatmode sesuai kebutuhan proyek

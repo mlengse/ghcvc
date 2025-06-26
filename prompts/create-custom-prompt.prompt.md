@@ -17,35 +17,41 @@ First, analyze the specific recurring task in the repository that requires a cus
 
 ## Prompt Template Creation
 
-Based on this analysis, generate a custom prompt template (`.prompt.md`) that includes:
+Based on this analysis, generate a custom prompt template file dengan format dan penamaan berikut:
 
-1. **Front Matter**:
-   - Appropriate mode (ask, edit, agent)
-   - Concise description of the prompt's purpose
-   - Any other relevant metadata
+- Simpan file sebagai `prompts/<nama-tugas>.prompt.md`.
+- Gunakan metadata front matter berikut di bagian atas file:
+  ```yaml
+  ---
+  mode: "agent" # atau "ask"/"edit" sesuai kebutuhan
+  description: "Deskripsi singkat tentang tujuan prompt ini"
+  ---
+  ```
 
-2. **Main Prompt Content**:
+Isi file prompt harus mencakup:
+
+1. **Main Prompt Content**:
    - Clear title describing the task
    - Structured sections that guide completion of the task
    - Placeholders for task-specific inputs
    - Required context references (#file, #selection, etc.)
    - Guidance on expected output format
 
-3. **Task-Specific Guidelines**:
+2. **Task-Specific Guidelines**:
    - Project-specific requirements for this task
    - Quality standards to meet
    - Common pitfalls to avoid
    - Integration points to consider
 
-4. **Documentation**:
+3. **Documentation**:
    - Usage examples
    - When to use this prompt vs. alternatives
    - How to customize for specific instances of the task
 
 ## Repository Integration
 
-Provide instructions on:
-- Where to store the prompt file in the repository structure
-- How to use the prompt within VS Code
-- How to share this prompt with team members
-- How to evolve the prompt as project requirements change
+Berikan instruksi tentang:
+- Di mana menyimpan file prompt di struktur repository (`prompts/`)
+- Cara menggunakan prompt di dalam VS Code
+- Cara membagikan prompt ke anggota tim
+- Cara mengembangkan prompt sesuai perubahan kebutuhan proyek

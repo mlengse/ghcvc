@@ -1,3 +1,8 @@
+---
+version: 1.0.0
+last_updated: 2024-01-09
+---
+
 # Instruksi Default GitHub Copilot
 
 ## Bahasa Default
@@ -17,7 +22,3 @@
 - Dokumentasi kode dapat menggunakan Bahasa Indonesia
 - Variabel, fungsi, dan nama kelas tetap mengikuti konvensi bahasa pemrograman
 - Pesan pengguna dan elemen UI menggunakan Bahasa Indonesia
-
-## Versi dan Pembaruan
-version: 1.0.0
-last_updated: 2024-01-09

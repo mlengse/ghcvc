@@ -1,12 +1,10 @@
 ---
 description: "Mode kustomisasi untuk menganalisis repositori dan menghasilkan konfigurasi Copilot"
-version: "1.0.0"
-last_updated: "2024-01-09"
 tools: [
   "editFile",
-  "#codebase",
-  "#selection",
-  "#changes"
+  "codebase",
+  "selection",
+  "changes"
 ]
 ---
 # Mode Kustomisasi Repositori

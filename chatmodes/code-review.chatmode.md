@@ -1,12 +1,10 @@
 ---
 description: "Review mode for code review and quality improvement"
-version: "1.0.0"
-last_updated: "2024-01-09"
 tools: [
-  "#codebase", 
-  "#selection",
-  "#problems",
-  "#changes"
+  "codebase",
+  "selection",
+  "problems",
+  "changes"
 ]
 ---
 # Code Review Mode
