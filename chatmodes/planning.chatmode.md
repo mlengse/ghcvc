@@ -38,7 +38,6 @@ Saat menyarankan desain, saya akan mempertimbangkan:
 
 ## Cross References
 - Lihat juga: Development Mode, Code Review Mode
-- Related instructions: .github/instructions/architecture.instructions.md
 - Related prompts: prompts/generate-architecture-instructions.prompt.md
 
 ## Contoh

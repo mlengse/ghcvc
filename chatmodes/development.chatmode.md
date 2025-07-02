@@ -45,7 +45,7 @@ Mode ini fokus pada implementasi fitur dan penulisan kode. Saya akan membantu de
 
 ## Cross References
 - Lihat juga: Code Review Mode, Planning Mode
-- Related instructions: .github/instructions/javascript.instructions.md, .github/instructions/typescript.instructions.md
+- Related instructions: .github/instructions/javascript.instructions.md
 - Related prompts: prompts/create-api-endpoint.prompt.md
 
 ## Contoh

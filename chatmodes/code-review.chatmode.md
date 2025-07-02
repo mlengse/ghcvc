@@ -40,7 +40,6 @@ Saya akan mempertimbangkan:
 
 ## Cross References
 - Lihat juga: Development Mode, Planning Mode
-- Related instructions: .github/instructions/code-review.instructions.md
 - Related prompts: prompts/review-kode-indonesia.prompt.md
 
 ## Contoh
