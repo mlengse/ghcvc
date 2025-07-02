@@ -1,3 +1,10 @@
+<!--
+Petunjuk:
+- Simpan file ini di folder `instructions/` dengan nama `<nama>.instructions.md`.
+- Gunakan metadata front matter berikut:
+  - applyTo: glob pattern file yang relevan (wajib)
+  - version dan last_updated (opsional)
+-->
 ---
 applyTo: "**/*.ext"
 version: "1.0.0"

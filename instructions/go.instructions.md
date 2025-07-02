@@ -1,52 +1,72 @@
 ---
 applyTo: "**/*.go"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
+
 # Go Style Guide
 
-## Naming Conventions
-- Use MixedCaps (camelCase) for exported names
-- Use mixedCaps for non-exported names
-- Use short, descriptive names
-- Acronyms should be all uppercase (e.g., HTTP, URL, ID)
-- Interface names often end with -er (e.g., Reader, Writer)
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh kode Go di proyek.
 
-## Formatting
-- Use gofmt for automated code formatting
-- Indent with tabs, not spaces
-- Keep line lengths reasonable (under 120 characters)
-- Group related declarations together
-- Add empty lines between function definitions
+## Standar Penamaan
+- Gunakan MixedCaps (camelCase) untuk nama yang diekspor
+- Gunakan mixedCaps untuk nama yang tidak diekspor
+- Singkatan harus ditulis dengan huruf kapital semua (misalnya, HTTP, URL, ID)
+- Nama antarmuka sering diakhiri dengan -er (misalnya, Reader, Writer)
 
-## Error Handling
-- Check errors explicitly; don't use try-catch patterns
-- Return errors rather than using exceptions
-- Use the fmt.Errorf function for formatting error messages
-- Create custom error types for specific error cases when needed
-- Consider using errors.Is() and errors.As() for error inspection
+## Format dan Gaya
+- Gunakan gofmt untuk pemformatan otomatis
+- Indentasi dengan tab, bukan spasi
+- Panjang baris sebaiknya kurang dari 120 karakter
+- Kelompokkan deklarasi yang terkait
+- Tambahkan baris kosong antar definisi fungsi
 
-## Best Practices
-- Follow the Go Proverbs (https://go-proverbs.github.io/)
-- Prefer composition over inheritance
-- Use interfaces for decoupling
-- Make zero values useful
-- Use context.Context for cancellation, timeouts, and passing request-scoped values
-- Use goroutines and channels appropriately
-- Avoid global variables
-- Implement proper resource cleanup with defer
+## Praktik Terbaik
+- Ikuti Go Proverbs (https://go-proverbs.github.io/)
+- Utamakan komposisi daripada pewarisan
+- Gunakan antarmuka untuk decoupling
+- Buat nilai nol berguna
+- Gunakan context.Context untuk pembatalan, batas waktu, dan meneruskan nilai yang terkait dengan permintaan
+- Gunakan goroutine dan saluran dengan tepat
+- Hindari variabel global
+- Laksanakan pembersihan sumber daya yang tepat dengan defer
 
-## Concurrency
-- Use goroutines for concurrent operations
-- Use channels for communication between goroutines
-- Consider sync primitives (Mutex, RWMutex) for simple shared state
-- Avoid data races by proper synchronization
-- Be cautious with goroutine leaks
-- Use context for cancellation
+### Konkruensi
+- Gunakan goroutine untuk operasi bersamaan
+- Gunakan saluran untuk komunikasi antar goroutine
+- Pertimbangkan primitif sinkronisasi (Mutex, RWMutex) untuk keadaan bersama yang sederhana
+- Hindari balapan data dengan sinkronisasi yang tepat
+- Berhati-hatilah dengan kebocoran goroutine
+- Gunakan konteks untuk pembatalan
 
-## Testing
-- Write table-driven tests
-- Use subtests for organizing test cases
-- Use t.Helper() for helper functions
-- Use go test's built-in features like test coverage
-- Use testify or other assertion libraries sparingly
-- Consider benchmarks for performance-critical code
-- Use examples that serve as documentation
+## Penanganan Kesalahan
+- Periksa kesalahan secara eksplisit; jangan gunakan pola try-catch
+- Kembalikan kesalahan daripada menggunakan pengecualian
+- Gunakan fmt.Errorf untuk memformat pesan kesalahan
+- Buat tipe kesalahan kustom untuk kasus kesalahan tertentu jika diperlukan
+- Pertimbangkan untuk menggunakan errors.Is() dan errors.As() untuk inspeksi kesalahan
+
+## Pengujian
+- Tulis pengujian yang dipimpin tabel
+- Gunakan subtes untuk mengatur kasus uji
+- Gunakan t.Helper() untuk fungsi pembantu
+- Manfaatkan fitur bawaan go test seperti cakupan pengujian
+- Gunakan testify atau pustaka pernyataan lainnya dengan hemat
+- Pertimbangkan pengujian kinerja untuk kode yang krusial secara kinerja
+- Gunakan contoh yang berfungsi sebagai dokumentasi
+
+## Contoh
+Tambahkan contoh kode Go sesuai standar di sini jika diperlukan. Misal:
+
+```go
+func ExampleAdd() {
+    got := Add(1, 2)
+    fmt.Println(got)
+    // Output: 3
+}
+```
+
+## Referensi
+- https://golang.org/doc/effective_go.html
+- https://go-proverbs.github.io/

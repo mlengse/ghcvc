@@ -1,43 +1,43 @@
 ---
 applyTo: "**/*.js,**/*.jsx,**/*.ts,**/*.tsx"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
+
 # JavaScript and TypeScript Style Guide
 
-## Naming Conventions
-- Use camelCase for variables and functions
-- Use PascalCase for classes and React components
-- Use UPPER_CASE for constants
-- Prefix private class fields with underscore (_)
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh kode JavaScript dan TypeScript di proyek.
 
-## TypeScript Specifics
-- Always provide explicit types for function parameters and return types
-- Use interfaces for object shapes and types for unions/intersections
-- Prefer type safety over any types
-- Use unknown over any when possible
+## Standar Penamaan
+- camelCase untuk variabel dan fungsi
+- PascalCase untuk class dan komponen React
+- UPPER_CASE untuk konstanta
+- Prefix private class field dengan _
 
-## Formatting
-- Use 2 spaces for indentation
-- Use semicolons at the end of statements
-- Keep line lengths below 100 characters
-- Use single quotes for strings
+## Format dan Gaya
+- 2 spasi untuk indentasi
+- Semicolon di akhir statement
+- Panjang baris < 100 karakter
+- Single quote untuk string
 
-## Best Practices
-- Use async/await over Promises and callbacks when possible
-- Use const for variables that don't change
-- Prefer destructuring for objects and arrays
-- Use spread operators for shallow copies
-- Use optional chaining and nullish coalescing
-- Prefer functional approaches like map, filter, reduce over imperative loops
+## Praktik Terbaik
+- Gunakan async/await
+- Gunakan const untuk variabel tetap
+- Prefer destructuring
+- Gunakan spread operator
+- Gunakan optional chaining dan nullish coalescing
+- Prefer map/filter/reduce
 
-## React Recommendations
-- Use functional components with hooks
-- Break UI into small, reusable components
-- Manage component state appropriately
-- Avoid inline styles when possible
-- Use memo and useMemo for performance optimization
+## Pengujian
+- Gunakan Jest untuk testing
+- Test komponen dengan React Testing Library
+- Mock dependency eksternal
+- Fokus pada testing behavior
 
-## Testing
-- Use Jest for testing framework
-- Test components with React Testing Library
-- Mock external dependencies
-- Focus on testing behavior, not implementation details
+## Contoh
+// Tambahkan contoh kode JS/TS sesuai standar di sini jika diperlukan.
+
+## Referensi
+- https://github.com/airbnb/javascript
+- Dokumentasi internal proyek

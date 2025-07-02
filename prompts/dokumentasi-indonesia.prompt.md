@@ -1,6 +1,8 @@
 ---
 mode: "agent"
-description: "Menghasilkan dokumentasi dalam Bahasa Indonesia"
+version: "1.0.0"
+last_updated: "2025-07-03"
+description: "Menghasilkan dokumentasi kode dalam Bahasa Indonesia sesuai standar dan praktik terbaik."
 ---
 # Generator Dokumentasi Bahasa Indonesia
 
@@ -44,4 +46,4 @@ Hasilkan dokumentasi lengkap dalam Bahasa Indonesia untuk kode yang diberikan. D
    - Detail validasi input
    - Potensi masalah keamanan dan mitigasinya
 
-Format dokumentasi menggunakan sintaks markdown yang sesuai untuk keterbacaan yang lebih baik. Gunakan istilah teknis dengan penjelasan dalam Bahasa Indonesia untuk memastikan kejelasan maksimal.
+Gunakan sintaks markdown yang sesuai dan istilah teknis dengan penjelasan dalam Bahasa Indonesia untuk kejelasan maksimal.

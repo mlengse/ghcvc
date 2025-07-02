@@ -7,6 +7,7 @@ tools: [
   "changes"
 ]
 ---
+
 # Mode Kustomisasi Repositori
 
 ## Deskripsi
@@ -36,11 +37,10 @@ Saat membuat konfigurasi, saya akan membuat:
 - Prompt kustom untuk tugas berulang yang spesifik untuk domain proyek ini
 
 ## Cross References
-- See also: Development Mode, Planning Mode
-- Related instructions: .github/instructions/repo-custom.instructions.md
+- Lihat juga: Development Mode, Planning Mode
 - Related prompts: prompts/analyze-repo-generate-instructions.prompt.md
 
-## Examples
+## Contoh
 - Analisis struktur proyek React
 - Konfigurasi untuk proyek microservices
 - Setup untuk proyek machine learning

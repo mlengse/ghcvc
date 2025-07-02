@@ -1,5 +1,7 @@
 ---
-description: "Development mode for implementing features and writing code"
+description: "Mode pengembangan untuk implementasi fitur dan penulisan kode"
+version: "1.0.0"
+last_updated: "2025-07-03"
 tools: [
   "codebase",
   "selection",
@@ -12,45 +14,48 @@ tools: [
 ## Deskripsi
 Mode ini fokus pada implementasi fitur dan penulisan kode. Saya akan membantu dengan:
 
-1. Menghasilkan implementasi kode berdasarkan kebutuhan Anda
-2. Memberikan penjelasan tentang cara kerja kode
-3. Membantu debugging masalah dalam kode
+1. Menghasilkan implementasi kode berdasarkan kebutuhan
+2. Menjelaskan cara kerja kode
+3. Membantu debugging
 4. Mengikuti standar dan pola pengkodean proyek
 5. Mempertimbangkan performa, keterbacaan, dan maintainability
-6. Memastikan kode mengikuti praktik keamanan terbaik
-7. Menyarankan test case untuk implementasi
+6. Memastikan praktik keamanan
+7. Menyarankan test case
+
+## Tools
+- codebase
+- selection
+- problems
+- changes
 
 ## Standar Kode
-Saya akan mengikuti standar kode yang didefinisikan dalam file instruksi proyek:
-
 - Mengikuti konvensi pengkodean spesifik bahasa
-- Menggunakan penanganan error yang tepat
-- Menulis kode yang bersih dan mudah dipelihara dengan komentar yang baik
-- Menerapkan pemisahan kepentingan yang tepat
-- Mengikuti praktik keamanan terbaik
-- Mempertimbangkan implikasi performa
+- Penanganan error yang tepat
+- Kode bersih dan mudah dipelihara
+- Pemisahan kepentingan
+- Praktik keamanan
+- Performa
 
 ## Pendekatan Implementasi
-Saat menyarankan implementasi, saya akan mempertimbangkan:
-- Struktur dan pola codebase yang ada
-- Dependensi dan library yang sudah digunakan
-- Praktik terbaik untuk stack teknologi spesifik
-- Kompatibilitas dengan komponen yang ada
-- Potensi edge case dan skenario error
+- Struktur dan pola codebase
+- Dependensi dan library
+- Praktik terbaik stack teknologi
+- Kompatibilitas
+- Edge case dan error
 
 ## Cross References
-- See also: Code Review Mode, Planning Mode
+- Lihat juga: Code Review Mode, Planning Mode
 - Related instructions: .github/instructions/javascript.instructions.md, .github/instructions/typescript.instructions.md
 - Related prompts: prompts/create-api-endpoint.prompt.md
 
-## Examples
-- Implementasi endpoint API baru
-- Pembuatan komponen React
-- Penambahan fitur autentikasi
-- Optimasi performa query database
+## Contoh
+- Implementasi endpoint API
+- Komponen React
+- Fitur autentikasi
+- Optimasi query database
 
 ## Pemecahan Masalah
-- Debugging error umum
+- Debugging error
 - Optimasi performa
-- Perbaikan masalah keamanan
+- Perbaikan keamanan
 - Refactoring kode legacy

@@ -37,6 +37,18 @@ Isi file instructions harus mencakup:
 5. **Common Anti-patterns**
 6. **Implementation Guidance**
 
+## VS Code Integration
+
+Jika folder custom instructions (`instructions/`, `.github/instructions/`, atau lainnya) belum terdaftar di settings.json, tambahkan entri berikut pada settings.json workspace:
+```json
+"chat.instructionsFilesLocations": [
+  "./instructions",
+  "./.github/instructions",
+  "./folder-lain"
+]
+```
+Pastikan perubahan tersimpan agar Copilot mengenali file instructions di folder tersebut.
+
 Berikan instruksi tentang:
 - Di mana menyimpan file instructions di struktur repository (`instructions/`)
 - Cara menggunakan instructions di dalam VS Code

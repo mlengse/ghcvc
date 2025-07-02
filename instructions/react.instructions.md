@@ -1,68 +1,60 @@
 ---
 applyTo: "**/*.jsx,**/*.tsx,**/*react*/**"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
 # React Style Guide
 
-## Component Structure
-- Use functional components with hooks rather than class components
-- Keep components small and focused on a single responsibility
-- Split large components into smaller, reusable ones
-- Use PascalCase for component names and camelCase for instances
-- Place each component in its own file when appropriate
-- Group related components in directories
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh kode React di proyek.
 
-## Props
-- Use prop destructuring in function parameters
-- Define prop types with PropTypes or TypeScript
-- Set default values for optional props
-- Avoid excessive prop drilling; consider context or state management
-- Use spread operator for props when appropriate, but be mindful of overuse
-- Pass callbacks as props, not inline functions, to avoid unnecessary rerenders
+## Standar Penamaan
+- PascalCase untuk komponen
+- camelCase untuk instance dan props
+- Nama file/deskripsi konsisten
 
-## State Management
-- Use useState for simple component state
-- Use useReducer for complex state logic
-- Consider external state management (Redux, Zustand, Jotai) for application-wide state
-- Keep state as local as possible
-- Separate UI state from application state
-- Use appropriate memoization (useMemo, useCallback) to optimize renders
+## Format dan Gaya
+- Komponen fungsional dengan hooks
+- Komponen kecil dan fokus
+- Satu file per komponen
+- Group komponen terkait
+- Prop destructuring
+- PropTypes/TypeScript untuk tipe
+- Default value untuk props opsional
+- Hindari prop drilling berlebih
+- Gunakan spread props dengan bijak
+- Callback sebagai props, hindari inline function
+- State lokal, gunakan Context/Redux untuk global
+- useMemo/useCallback untuk optimasi
+- Styling konsisten (CSS Modules, Styled Components, dsb)
+- Responsif dan aksesibel
+- React.memo untuk komponen pure
+- Virtualisasi list panjang
+- Lazy load dan code splitting
+- Key di list
+- Fragment untuk DOM minimal
+- Error Boundary untuk error
+- Portal untuk modal/overlay
+- Form handling terstandar
 
-## Hooks
-- Follow the Rules of Hooks
-- Use custom hooks to share logic between components
-- Name hooks with "use" prefix
-- Place hooks at the top level of your component
-- Use useEffect for side effects with proper cleanup
-- Use dependency arrays correctly in useEffect, useMemo, and useCallback
+## Praktik Terbaik
+- Ikuti Rules of Hooks
+- Custom hook untuk logic reuse
+- Nama hook dengan "use"
+- useEffect untuk side effect
+- Dependency array benar
+- Accessibility (HTML semantik, ARIA)
 
-## Styling
-- Choose a consistent approach: CSS Modules, Styled Components, Tailwind, etc.
-- Keep styles close to the components they apply to
-- Use responsive design principles
-- Implement proper theming support
-- Consider accessibility in your styling choices
-- Extract common styles into reusable components or variables
+## Pengujian
+- React Testing Library untuk unit test
+- Test perilaku, bukan implementasi
+- Mock dependency eksternal
+- Test interaksi user
+- Integration test untuk flow penting
 
-## Performance
-- Use React.memo for pure components that render often
-- Use virtualization for long lists (react-window, react-virtualized)
-- Avoid unnecessary rerenders by proper use of memoization
-- Lazy load components and routes when appropriate
-- Implement code-splitting for larger applications
-- Avoid inline object/array creation in render functions
+## Contoh
+Tambahkan contoh kode React sesuai standar di sini jika diperlukan.
 
-## Best Practices
-- Use keys properly in lists
-- Use fragments to avoid unnecessary DOM nodes
-- Handle errors gracefully with Error Boundaries
-- Keep side effects out of the render phase
-- Use portals for modals and overlays
-- Implement proper form handling (controlled components or libraries)
-- Follow accessibility guidelines (semantic HTML, ARIA attributes)
-
-## Testing
-- Write unit tests for components using React Testing Library
-- Test behavior rather than implementation details
-- Mock external dependencies
-- Test user interactions
-- Implement integration tests for critical flows
+## Referensi
+- https://react.dev/learn
+- https://react.dev/reference

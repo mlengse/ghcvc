@@ -48,7 +48,16 @@ Isi file prompt harus mencakup:
    - When to use this prompt vs. alternatives
    - How to customize for specific instances of the task
 
-## Repository Integration
+## VS Code Integration
+
+Jika folder custom prompt (`prompts/` atau lainnya) belum terdaftar di settings.json, tambahkan entri berikut pada settings.json workspace:
+```json
+"chat.promptFilesLocations": [
+  "./prompts",
+  "./folder-lain"
+]
+```
+Pastikan perubahan tersimpan agar Copilot mengenali file prompt di folder tersebut.
 
 Berikan instruksi tentang:
 - Di mana menyimpan file prompt di struktur repository (`prompts/`)

@@ -45,7 +45,17 @@ Isi file chatmode harus mencakup:
    - Tingkat detail teknis
    - Terminologi dan gaya bahasa
 
-## Implementation Guidance
+## VS Code Integration
+
+Jika folder custom chatmode (`chatmodes/`, `.github/chatmodes/`, atau lainnya) belum terdaftar di settings.json, tambahkan entri berikut pada settings.json workspace:
+```json
+"chat.modeFilesLocations": [
+  "./chatmodes",
+  "./.github/chatmodes",
+  "./folder-lain"
+]
+```
+Pastikan perubahan tersimpan agar Copilot mengenali file chatmode di folder tersebut.
 
 Berikan instruksi tentang:
 - Di mana menyimpan file chatmode di struktur repository (`chatmodes/`)

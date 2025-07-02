@@ -1,21 +1,24 @@
 ---
 mode: "agent"
-description: "Generate unit tests for a function or class"
+version: "1.0.0"
+last_updated: "2025-07-03"
+description: "Menghasilkan unit test komprehensif untuk fungsi atau kelas sesuai standar bahasa."
 ---
 # Generate Unit Tests
 
-Generate comprehensive unit tests for the following code. Include tests for:
+Buat unit test komprehensif untuk kode berikut. Sertakan:
 
-- Normal operation with expected inputs
-- Edge cases and boundary values
-- Error scenarios and exception handling
-- Any mocking or stubbing of external dependencies
+- Operasi normal
+- Edge case dan boundary value
+- Skenario error dan exception
+- Mock/stub dependency eksternal
 
-The tests should be:
-- Independent and repeatable
-- Clearly named to indicate what they're testing
-- Follow the Arrange, Act, Assert pattern
-- Include setup and teardown as appropriate
-- Use appropriate assertions for validation
+Test harus:
 
-Use the appropriate testing framework and conventions for the language.
+- Independen dan repeatable
+- Nama jelas sesuai yang diuji
+- Ikuti pola Arrange, Act, Assert
+- Setup/teardown jika perlu
+- Assertion sesuai bahasa/framework
+
+Gunakan framework dan konvensi yang sesuai untuk bahasa target.

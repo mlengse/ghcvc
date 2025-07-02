@@ -1,72 +1,77 @@
 ---
 applyTo: "**/*.kt,**/*.kts"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
 # Kotlin Style Guide
 
-## Naming Conventions
-- Use camelCase for variables, functions, and properties
-- Use PascalCase for classes, interfaces, and objects
-- Use SCREAMING_SNAKE_CASE for constants
-- Use backticks for identifiers with spaces or keywords
-- Prefix interface names with 'I' is not recommended
-- Use descriptive, meaningful names
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh kode Kotlin di proyek.
 
-## Formatting
-- Use 4 spaces for indentation
-- Keep line length reasonable (typically 100-120 characters)
-- Use ktlint or detekt for automated formatting
-- Place opening braces on the same line
-- Add spaces around binary operators
-- Use trailing commas in multi-line parameter lists
-- Format multiline functions and classes consistently
+## Standar Penamaan
+- camelCase untuk variabel, fungsi, dan properti
+- PascalCase untuk kelas, interface, dan objek
+- SCREAMING_SNAKE_CASE untuk konstanta
+- Gunakan backticks untuk identifier khusus
+- Hindari prefix 'I' pada interface
+- Nama deskriptif dan bermakna
 
-## Language Features
-- Prefer val over var when possible
-- Use extension functions to extend functionality
-- Use data classes for model classes
-- Use sealed classes for representing restricted hierarchies
-- Use object declarations for singletons
-- Use companion objects for factory methods and static members
-- Use type aliases to simplify complex types
-- Use lambdas and higher-order functions where appropriate
-- Leverage null safety features with proper nullability annotations
-- Use smart casts when possible
-- Prefer property delegation over manual implementation
+## Format dan Gaya
+- 4 spasi untuk indentasi
+- Panjang baris 100-120 karakter
+- Gunakan ktlint/detekt untuk format otomatis
+- Kurung kurawal di baris yang sama
+- Spasi di sekitar operator
+- Trailing comma pada parameter multi-baris
+- Format konsisten untuk fungsi/kelas multi-baris
 
-## Collections
-- Use the collection factory functions (listOf, mapOf, setOf)
-- Use the scope functions (let, run, with, apply, also) appropriately
-- Use collection transformations (map, filter, reduce) over loops
-- Use sequences for large collections to improve performance
-- Use inline functions with reified generics when needed
+## Praktik Terbaik
+- Prefer val daripada var
+- Gunakan extension function
+- Data class untuk model
+- Sealed class untuk hierarki terbatas
+- Object declaration untuk singleton
+- Companion object untuk static/factory
+- Type alias untuk tipe kompleks
+- Lambda dan higher-order function
+- Null safety dengan anotasi
+- Smart cast
+- Property delegation
 
-## Coroutines
-- Use suspending functions for asynchronous operations
-- Apply appropriate coroutine scope for lifecycle management
-- Use structured concurrency patterns
-- Handle exceptions in coroutines properly
-- Use appropriate dispatchers for different types of work
-- Apply flow for reactive streams
+### Koleksi
+- Factory function (listOf, mapOf, setOf)
+- Scope function (let, run, with, apply, also)
+- Transformasi koleksi (map, filter, reduce)
+- Sequence untuk koleksi besar
+- Inline function dengan reified generics
 
-## Android-Specific (if applicable)
-- Use ViewModel for UI-related data storage and business logic
-- Use LiveData or Flow for observable data
-- Apply proper coroutine scopes (viewModelScope, lifecycleScope)
-- Use view binding or data binding instead of findViewById
-- Implement dependency injection with Hilt or Koin
-- Apply the repository pattern for data operations
+### Coroutine
+- Fungsi suspend untuk async
+- Scope coroutine sesuai lifecycle
+- Structured concurrency
+- Exception handling di coroutine
+- Dispatcher sesuai kebutuhan
+- Flow untuk stream reaktif
 
-## Testing
-- Use JUnit for unit testing
-- Use MockK for mocking dependencies
-- Test coroutines using TestDispatcher
-- Use runTest for testing suspending functions
-- Test viewmodels with InstantTaskExecutorRule
-- Write instrumentation tests for Android components
+### Android (jika relevan)
+- ViewModel untuk data UI
+- LiveData/Flow untuk data observable
+- Scope coroutine (viewModelScope, lifecycleScope)
+- View binding/data binding
+- Dependency injection (Hilt/Koin)
+- Repository pattern
 
-## Documentation
-- Document public APIs with KDoc comments
-- Include examples in documentation
-- Document nullable parameters and return values
-- Explain complex algorithms or business rules
-- Use @throws to document exceptions
+## Pengujian
+- JUnit untuk unit test
+- MockK untuk mocking
+- TestDispatcher untuk coroutine
+- runTest untuk suspend function
+- InstantTaskExecutorRule untuk ViewModel
+- Instrumentation test untuk komponen Android
+
+## Contoh
+Tambahkan contoh kode Kotlin sesuai standar di sini jika diperlukan.
+
+## Referensi
+- https://kotlinlang.org/docs/coding-conventions.html
+- https://android.github.io/kotlin-guides/

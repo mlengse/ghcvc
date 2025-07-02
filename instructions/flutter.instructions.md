@@ -1,65 +1,43 @@
 ---
 applyTo: "**/*.dart,**/flutter/**"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
+
 # Flutter Style Guide
 
-## Architecture
-- Prefer a clear architectural pattern (BLoC, Provider, Redux, MVC, etc.)
-- Separate UI, business logic, and data layers
-- Use dependency injection for better testability
-- Create reusable widgets for common UI patterns
-- Organize code by feature/module when possible
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh kode Flutter di proyek.
 
-## State Management
-- Choose an appropriate state management solution for the complexity of the app
-- For simple state, use setState or Provider
-- For complex state, consider BLoC, Riverpod, or other solutions
-- Keep state management logic separate from the UI code
-- Minimize state duplication across the app
+## Standar Penamaan
+- Ikuti konvensi Dart untuk penamaan variabel, fungsi, kelas, dan file.
+- Gunakan PascalCase untuk widget dan kelas.
 
-## Widget Structure
-- Split large widgets into smaller, reusable components
-- Use StatelessWidget when possible
-- Override the operator == and implement hashCode for Widget keys
-- Keep build methods simple and focused
-- Extract complex build logic into helper methods
-- Add comments for widget sections and complex layout arrangements
+## Format dan Gaya
+- Gunakan 2 spasi untuk indentasi.
+- Ikuti pedoman dartfmt.
+- Komentar pada bagian widget kompleks dan layout.
 
-## Performance
-- Use const constructors for widgets that don't change
-- Implement shouldRepaint and shouldRebuild when appropriate
-- Use ListView.builder for long lists
-- Avoid expensive operations in the build method
-- Use RepaintBoundary to limit UI updates
-- Consider using cached_network_image for network images
-- Optimize asset sizes and formats
+## Praktik Terbaik
+- Terapkan arsitektur yang jelas (BLoC, Provider, dsb).
+- Pisahkan UI, business logic, dan data layer.
+- Gunakan dependency injection.
+- Buat widget reusable.
+- Pilih state management sesuai kebutuhan.
+- Optimalkan performa dengan const, RepaintBoundary, dsb.
+- Ikuti pedoman Material/Cupertino.
+- Gunakan ThemeData dan MediaQuery untuk styling dan responsivitas.
+- Implementasikan dark mode dan aksesibilitas.
+- Gunakan named routes dan router untuk navigasi.
 
-## UI Design
-- Follow Material Design or Cupertino guidelines when appropriate
-- Use ThemeData for consistent styling
-- Extract text styles, colors, and dimensions into theme or constant files
-- Use MediaQuery for responsive layouts
-- Implement proper dark mode support
-- Ensure proper handling of different screen sizes and orientations
-- Use SizedBox or Container for spacing rather than Padding when appropriate
+## Pengujian
+- Tulis widget test, unit test, dan integration test.
+- Mock dependency eksternal.
+- Uji edge case dan error scenario.
 
-## Navigation
-- Use named routes for better maintainability
-- Consider using a router package for complex navigation requirements
-- Handle deep links properly
-- Use appropriate transitions between screens
-- Implement proper back button handling
+## Contoh
+// Tambahkan contoh kode Flutter sesuai standar di sini jika diperlukan.
 
-## Testing
-- Write widget tests for UI components
-- Create unit tests for business logic
-- Use integration tests for critical user flows
-- Mock external dependencies and services
-- Test edge cases and error scenarios
-
-## Accessibility
-- Use semantic labels for important widgets
-- Handle text scaling for users with vision impairments
-- Use sufficient color contrast for text
-- Ensure touch targets are at least 48x48 pixels
-- Test with screen readers and other accessibility tools
+## Referensi
+- https://flutter.dev/docs/development/ui/interactive
+- Dokumentasi internal proyek

@@ -1,42 +1,44 @@
 ---
 mode: "agent"
-description: "Create a new API endpoint"
+version: "1.0.0"
+last_updated: "2025-07-03"
+description: "Membuat endpoint API baru sesuai standar RESTful dan praktik terbaik keamanan."
 ---
 # Create a New API Endpoint
 
-Create a new API endpoint with the following characteristics:
+Buat endpoint API baru dengan karakteristik berikut:
 
-1. **Endpoint Definition**:
-   - Define the HTTP method (GET, POST, PUT, DELETE, etc.)
-   - Define the route path and any path parameters
-   - Define query parameters if applicable
-   - Define request body schema if applicable
+1. **Definisi Endpoint**:
+   - HTTP method (GET, POST, PUT, DELETE, dll)
+   - Path dan parameter path
+   - Query parameter (jika ada)
+   - Skema request body (jika ada)
 
-2. **Input Validation**:
-   - Validate all input parameters
-   - Handle malformed input gracefully
+2. **Validasi Input**:
+   - Validasi semua parameter
+   - Tangani input tidak valid dengan baik
 
-3. **Authentication & Authorization**:
-   - Apply appropriate authentication middleware
-   - Implement authorization checks
+3. **Autentikasi & Otorisasi**:
+   - Terapkan middleware autentikasi
+   - Implementasi pengecekan otorisasi
 
-4. **Business Logic**:
-   - Implement the required functionality
-   - Make necessary database queries or external API calls
-   - Handle edge cases and error scenarios
+4. **Logika Bisnis**:
+   - Implementasi fungsionalitas utama
+   - Query database atau API eksternal
+   - Tangani edge case dan error
 
-5. **Response**:
-   - Define appropriate status codes
-   - Structure the response body according to API conventions
-   - Include proper error messages when needed
+5. **Respons**:
+   - Status code yang sesuai
+   - Struktur response body sesuai konvensi API
+   - Pesan error yang jelas
 
-6. **Documentation**:
-   - Add API documentation comments
-   - Document request/response formats
-   - Include example usage
+6. **Dokumentasi**:
+   - Komentar dokumentasi API
+   - Format request/response
+   - Contoh penggunaan
 
-7. **Testing**:
-   - Create unit tests for the endpoint
-   - Add integration tests if appropriate
+7. **Pengujian**:
+   - Unit test untuk endpoint
+   - Integration test jika perlu
 
-Follow RESTful principles and the existing API structure of the project. Ensure proper error handling and security practices.
+Ikuti prinsip RESTful dan struktur API proyek. Pastikan penanganan error dan keamanan sudah baik.

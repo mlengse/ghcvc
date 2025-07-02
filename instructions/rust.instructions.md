@@ -1,81 +1,81 @@
 ---
 applyTo: "**/*.rs"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
 # Rust Style Guide
 
-## Naming Conventions
-- Use snake_case for variables, functions, and modules
-- Use PascalCase for types, traits, and enum variants
-- Use SCREAMING_SNAKE_CASE for statics and constants
-- Use descriptive names that reflect purpose
-- Prefer concise but clear names
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh kode Rust di proyek.
 
-## Formatting
-- Use the standard Rust formatting via rustfmt
-- Use 4 spaces for indentation
-- Limit lines to 100 characters when possible
-- Place opening brackets on the same line
-- Use spaces around binary operators
+## Standar Penamaan
+- snake_case untuk variabel, fungsi, dan modul
+- PascalCase untuk tipe, trait, enum variant
+- SCREAMING_SNAKE_CASE untuk statik dan konstanta
+- Nama deskriptif dan jelas
+- Nama singkat namun bermakna
 
-## Error Handling
-- Use Result<T, E> for operations that might fail
-- Use Option<T> for values that might not exist
-- Avoid unwrap() and expect() in production code
-- Implement proper error types with std::error::Error
-- Use the ? operator for error propagation
-- Consider using thiserror or anyhow for error management
-- Add context to errors when propagating them
+## Format dan Gaya
+- rustfmt untuk format otomatis
+- 4 spasi untuk indentasi
+- Panjang baris 100 karakter
+- Kurung buka di baris yang sama
+- Spasi di sekitar operator
 
-## Ownership and Borrowing
-- Prefer borrowing over ownership when possible
-- Use &str over String when you only need to read
-- Use references with appropriate lifetimes
-- Avoid unnecessary clones
-- Use Cow<'a, T> when you need to decide between borrowing and owning at runtime
-- Be explicit about lifetimes when necessary
+## Praktik Terbaik
+- Result<T, E> untuk operasi yang bisa gagal
+- Option<T> untuk nilai opsional
+- Hindari unwrap()/expect() di production
+- Error type dengan std::error::Error
+- Operator ? untuk propagasi error
+- thiserror/anyhow untuk error management
+- Tambahkan context pada error
+- Prefer borrowing daripada ownership
+- Gunakan &str jika hanya baca
+- Referensi dengan lifetime sesuai
+- Hindari clone tidak perlu
+- Cow<'a, T> untuk fleksibilitas borrow/own
+- Lifetime eksplisit jika perlu
+- Hindari unsafe kecuali perlu
+- Dokumentasi pada blok unsafe
+- Abstraksi aman untuk unsafe
+- Checked arithmetic untuk overflow
+- NonZeroU32 jika relevan
+- Validasi input eksternal
+- Modul untuk organisasi kode
+- API publik minimal dan terdokumentasi
+- Detail implementasi privat
+- Test di modul #[cfg(test)]
+- Feature flag untuk opsionalitas
+- Message passing dengan channel
+- Mutex/sync primitive jika perlu
+- Hindari data race
+- rayon untuk paralelisme
+- Implementasi Send/Sync sesuai
+- Dokumentasi thread safety
+- Type system untuk cegah bug
+- Enum untuk state/variant
+- Trait untuk kontrak tipe
+- Generik untuk reuse
+- Associated type untuk generik kompleks
+- Type-level programming jika perlu
+- Dokumentasi public API dengan rustdoc
+- Contoh di dokumentasi
+- Dokumentasi kondisi panic
+- Markdown di doc comment
+- Doctest untuk validasi
 
-## Memory Safety
-- Avoid unsafe code unless absolutely necessary
-- Document all unsafe blocks extensively
-- Encapsulate unsafe code in safe abstractions
-- Use checked arithmetic operations to prevent overflows
-- Consider using types like NonZeroU32 when applicable
-- Validate external input thoroughly
+## Pengujian
+- Unit test untuk fungsi/metode
+- #[test] untuk test
+- assert!/assert_eq!/assert_ne! untuk asersi
+- Integration test di folder tests/
+- Property-based test jika perlu
+- Benchmark untuk kode performa
 
-## Modules and Organization
-- Use the module system to organize code logically
-- Keep public APIs minimal and well-documented
-- Use private implementation details when possible
-- Place tests in a tests module with the #[cfg(test)] attribute
-- Use feature flags for optional functionality
+## Contoh
+Tambahkan contoh kode Rust sesuai standar di sini jika diperlukan.
 
-## Concurrency
-- Use message passing with channels when possible
-- Use mutexes and other sync primitives when appropriate
-- Avoid data races with proper synchronization
-- Consider using the rayon crate for parallel operations
-- Implement Send and Sync traits appropriately
-- Document thread safety guarantees
-
-## Type System
-- Use Rust's type system to prevent bugs at compile-time
-- Use enums for representing different states or variants
-- Implement proper traits for your types
-- Use generics for code reuse
-- Use associated types to simplify complex generics
-- Leverage type-level programming when beneficial
-
-## Documentation
-- Document all public APIs with rustdoc comments
-- Include examples in documentation
-- Document panicking conditions
-- Use markdown formatting in doc comments
-- Run doctests to ensure documentation is correct
-
-## Testing
-- Write unit tests for functions and methods
-- Use #[test] attribute for test functions
-- Use assert!, assert_eq!, and assert_ne! macros
-- Write integration tests in the tests/ directory
-- Use property-based testing when applicable
-- Benchmark performance-critical code
+## Referensi
+- https://doc.rust-lang.org/1.0.0/style/
+- https://doc.rust-lang.org/book/

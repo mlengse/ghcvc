@@ -1,44 +1,40 @@
 ---
 applyTo: "**"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
+
 # Agent Mode Instructions
 
-When operating in agent mode, follow these guiding principles:
+## Ruang Lingkup
+Instruksi ini berlaku untuk semua file dan task yang dijalankan dalam mode agent Copilot.
 
-## Understanding Requirements
-- First, analyze and understand the requirements thoroughly
-- Ask clarifying questions if needed before proceeding with implementation
-- Break down complex tasks into smaller, manageable steps
-- Create a clear plan before starting implementation
+## Standar Penamaan
+- Gunakan penamaan variabel, fungsi, dan kelas sesuai standar proyek.
+- Gunakan nama yang deskriptif dan konsisten.
 
-## Implementation Approach
-- Follow project patterns and existing architecture
-- Make incremental, focused changes rather than large rewrites
-- Document code with clear comments and meaningful variable names
-- Implement proper error handling and validations
-- Consider edge cases and handle them appropriately
+## Format dan Gaya
+- Dokumentasikan kode dengan komentar yang jelas.
+- Gunakan format kode yang konsisten sesuai standar proyek.
+- Implementasikan error handling dan validasi secara eksplisit.
 
-## Code Quality
-- Follow the project's coding standards and best practices
-- Write clean, maintainable code
-- Optimize for readability first, then performance
-- Avoid duplicating existing functionality
-- Use descriptive, semantic naming conventions
+## Praktik Terbaik
+- Analisis dan pahami requirement sebelum implementasi.
+- Pecah task kompleks menjadi langkah kecil.
+- Ikuti pola arsitektur dan best practice proyek.
+- Lakukan perubahan secara inkremental.
+- Hindari duplikasi fungsi/kode.
+- Optimalkan untuk keterbacaan dan maintainability.
 
-## Testing Strategy
-- Write appropriate unit tests for all new functionality
-- Test edge cases and failure scenarios
-- Ensure existing tests pass after changes
-- Add integration tests for complex workflows
+## Pengujian
+- Tulis unit test untuk setiap fitur baru.
+- Uji edge case dan skenario error.
+- Pastikan seluruh test existing tetap lolos.
+- Tambahkan integration test untuk workflow kompleks.
 
-## Tool Usage
-- Use appropriate tools for each task
-- Prefer existing project tools and patterns
-- Run tests to verify changes before finalizing
-- Use appropriate error handling strategies
+## Contoh
+// Tambahkan contoh kode atau skenario penggunaan agent mode di sini jika diperlukan.
 
-## Communication
-- Explain major decisions and approaches
-- Document any unusual patterns or workarounds
-- Ask permission before making architectural changes
-- Explain your reasoning for significant implementation choices
+## Referensi
+- Standar internal proyek
+- Dokumentasi Copilot agent mode

@@ -1,77 +1,54 @@
 ---
 applyTo: "**/*.jsx,**/*.tsx,**/*next*/**"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
 # Next.js Style Guide
 
-## Project Structure
-- Follow the standard Next.js directory structure (pages, public, styles)
-- Use the app directory for newer projects leveraging the App Router
-- Organize pages by feature or route structure
-- Place reusable components in a components directory
-- Use a lib or utils directory for helper functions
-- Store API routes in the api directory
-- Keep configuration files at the root level
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh kode Next.js di proyek.
 
-## Routing
-- Use the file-system based routing approach
-- Implement dynamic routes with appropriate naming ([id].js)
-- Use shallow routing when applicable
-- Implement proper error pages (404, 500)
-- Add proper metadata for SEO using Next.js metadata API
-- Use Link component for client-side navigation between pages
-- Implement proper handling of query parameters
+## Standar Penamaan
+- Ikuti konvensi React untuk penamaan komponen, file, dan direktori
+- Gunakan PascalCase untuk komponen, camelCase untuk instance
+- Gunakan nama deskriptif dan konsisten
 
-## Data Fetching
-- Choose appropriate data fetching method based on requirements:
-  - getStaticProps for static data
-  - getServerSideProps for dynamic server-rendered data
-  - getStaticPaths for dynamic routes with static generation
-  - SWR or React Query for client-side data fetching with caching
-- Implement proper error handling for data fetching operations
-- Use Incremental Static Regeneration (ISR) for data that changes occasionally
-- Cache API responses appropriately
+## Format dan Gaya
+- Struktur direktori standar Next.js (pages, public, styles, app)
+- 4 spasi untuk indentasi
+- Panjang baris maksimal 100 karakter
+- Gunakan Prettier/ESLint untuk format otomatis
+- Kurung kurawal di baris yang sama
+- Spasi di sekitar operator
 
-## Performance
-- Use Image component for optimized images
-- Implement proper code splitting with dynamic imports
-- Utilize Next.js built-in performance optimizations
-- Implement proper caching strategies (Cache-Control headers)
-- Use Server Components when appropriate (App Router)
-- Optimize third-party script loading with next/script
-- Implement prefetching for anticipated user navigation
+## Praktik Terbaik
+- Gunakan App Router untuk proyek baru
+- Komponen reusable di folder components
+- Helper di lib/utils
+- API route di api/
+- Metadata SEO dengan Next.js metadata API
+- Gunakan Link untuk navigasi
+- Prefetching untuk navigasi cepat
+- Gunakan Image untuk optimasi gambar
+- Dynamic import untuk code splitting
+- State management sesuai kebutuhan (Context, Redux, dsb)
+- Validasi input di API route
+- Error handling dan status code konsisten
+- Gunakan NextAuth.js untuk autentikasi
+- Variabel lingkungan untuk konfigurasi
+- Deployment di Vercel atau platform serupa
+- CI/CD pipeline
 
-## State Management
-- Use local state for component-specific state
-- Consider using Context API for shared state across components
-- Use external state management libraries (Redux, Zustand) for complex applications
-- Implement proper data persistence when needed (localStorage, cookies)
-- Use React Query or SWR for server state
+## Pengujian
+- Unit test untuk komponen dan utilitas
+- Integration test untuk user flow
+- E2E test dengan Cypress/Playwright
+- Mock API di test
+- Test SSR/SSG/CSR
 
-## API Routes
-- Implement proper validation for API inputs
-- Use appropriate HTTP methods (GET, POST, PUT, DELETE)
-- Return consistent response formats
-- Implement proper error handling and status codes
-- Secure routes with authentication when needed
-- Consider rate limiting for public APIs
+## Contoh
+Tambahkan contoh kode Next.js sesuai standar di sini jika diperlukan.
 
-## Authentication
-- Use NextAuth.js or a similar solution for authentication
-- Secure API routes with proper middleware
-- Implement proper role-based access control
-- Use secure cookies or JWT for session management
-- Handle authentication state properly on the client side
-
-## Deployment & Environment
-- Use environment variables for configuration
-- Keep sensitive information out of client-side code
-- Consider using Vercel or similar platforms for deployment
-- Implement proper CI/CD pipeline
-- Use feature flags for controlled feature rollout
-
-## Testing
-- Write unit tests for components and utility functions
-- Implement integration tests for critical user flows
-- Use Cypress or Playwright for end-to-end testing
-- Mock API responses in tests
-- Test different rendering strategies (SSR, SSG, CSR)
+## Referensi
+- https://nextjs.org/docs
+- https://nextjs.org/learn

@@ -1,10 +1,12 @@
 ---
 mode: "agent"
-description: "Melakukan review kode dengan komentar dalam Bahasa Indonesia"
+version: "1.0.0"
+last_updated: "2025-07-03"
+description: "Melakukan review kode dengan komentar dan rekomendasi dalam Bahasa Indonesia."
 ---
 # Review Kode dalam Bahasa Indonesia
 
-Lakukan review kode yang diberikan dan berikan feedback terperinci dalam Bahasa Indonesia. Review harus mencakup:
+Lakukan review kode dan berikan feedback terperinci dalam Bahasa Indonesia. Review harus mencakup:
 
 1. **Ringkasan Umum**:
    - Penilaian singkat tentang kualitas kode secara keseluruhan
@@ -48,4 +50,4 @@ Lakukan review kode yang diberikan dan berikan feedback terperinci dalam Bahasa 
    - Pola atau teknik yang diterapkan dengan tepat
    - Solusi kreatif atau efisien untuk masalah yang kompleks
 
-Berikan komentar yang konstruktif dan jelas dengan penjelasan mengapa perubahan tertentu direkomendasikan. Jika menggunakan istilah teknis, berikan penjelasan singkat untuk memastikan pemahaman yang jelas.
+Berikan komentar konstruktif dan jelas, serta penjelasan istilah teknis jika perlu.

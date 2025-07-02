@@ -1,40 +1,36 @@
 ---
 applyTo: "**"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
+
 # Instruksi Bahasa Indonesia
 
-## Penggunaan Bahasa
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh interaksi, dokumentasi, dan komunikasi dalam proyek yang menggunakan Bahasa Indonesia.
 
-- Selalu gunakan Bahasa Indonesia untuk semua interaksi dengan pengguna
-- Gunakan Bahasa Indonesia yang formal dan profesional
-- Hindari penggunaan slang atau bahasa tidak baku kecuali diminta secara spesifik
-- Untuk istilah teknis yang tidak memiliki padanan dalam Bahasa Indonesia, gunakan istilah aslinya dengan format *italic* atau dalam tanda kutip
-- Jelaskan istilah teknis jika diperlukan untuk memastikan pemahaman yang jelas
-- Gunakan untuk comment dalam kode, dokumentasi, dan pesan pengguna
+## Standar Penamaan
+- Nama variabel, fungsi, dan kelas mengikuti konvensi bahasa pemrograman yang digunakan.
+- Istilah teknis yang tidak memiliki padanan diterjemahkan dengan format *italic* atau tanda kutip.
 
-## Gaya Komunikasi
+## Format dan Gaya
+- Gunakan Bahasa Indonesia formal dan profesional.
+- Struktur jawaban dengan heading, bullet points, dan pemformatan yang baik.
+- Komentar dan dokumentasi kode dapat menggunakan Bahasa Indonesia.
 
-- Gunakan kalimat yang jelas, ringkas, dan mudah dimengerti
-- Berikan jawaban yang komprehensif tetapi tidak bertele-tele
-- Struktur jawaban dengan baik menggunakan pemformatan yang sesuai (heading, bullet points, dll)
-- Gunakan bahasa yang sopan dan ramah
-- Sesuaikan tingkat formalitas berdasarkan konteks dan permintaan pengguna
+## Praktik Terbaik
+- Gunakan kalimat yang jelas, ringkas, dan mudah dimengerti.
+- Berikan jawaban komprehensif tanpa bertele-tele.
+- Jelaskan istilah teknis jika diperlukan.
+- Ajukan klarifikasi dalam Bahasa Indonesia jika ada pertanyaan ambigu.
 
-## Penerjemahan Istilah Teknis
+## Pengujian
+- Pastikan pesan, dokumentasi, dan komentar mudah dipahami oleh pengguna Indonesia.
+- Uji respons untuk berbagai tipe pertanyaan (teknis, non-teknis, campuran bahasa).
 
-- Untuk konsep pemrograman, gunakan istilah bahasa asli dengan penjelasan dalam Bahasa Indonesia jika diperlukan
-- Untuk pesan error atau output sistem, sertakan teks asli dan terjemahan atau penjelasan dalam Bahasa Indonesia
-- Untuk nama fungsi, variabel, dan elemen kode lainnya, pertahankan nama aslinya
+## Contoh
+// Tambahkan contoh penggunaan instruksi Bahasa Indonesia di dokumentasi atau kode.
 
-## Respons ke Pertanyaan
-
-- Jika pertanyaan diberikan dalam bahasa lain, tetap berikan jawaban dalam Bahasa Indonesia
-- Jika diperlukan klarifikasi, ajukan pertanyaan dalam Bahasa Indonesia
-- Jika diminta secara spesifik untuk menggunakan bahasa lain, baru gunakan bahasa yang diminta
-
-## Format Kode
-
-- Komentar dalam kode dapat dituliskan dalam Bahasa Indonesia
-- Dokumentasi kode (seperti docstrings) dapat menggunakan Bahasa Indonesia
-- Variabel, fungsi, dan nama kelas tetap mengikuti konvensi bahasa pemrograman yang digunakan
-- Pesan pengguna dan elemen UI sebaiknya menggunakan Bahasa Indonesia
+## Referensi
+- Pedoman Bahasa Indonesia Baku
+- Dokumentasi internal proyek

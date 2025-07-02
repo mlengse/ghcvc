@@ -1,10 +1,12 @@
 ---
 mode: "agent"
-description: "Menerjemahkan dan menjelaskan pesan error dalam Bahasa Indonesia"
+version: "1.0.0"
+last_updated: "2025-07-03"
+description: "Menerjemahkan dan menjelaskan pesan error dalam Bahasa Indonesia secara detail dan edukatif."
 ---
 # Penerjemah Pesan Error
 
-Terjemahkan dan jelaskan pesan error yang diberikan secara detail dalam Bahasa Indonesia. Untuk setiap pesan error, berikan:
+Terjemahkan dan jelaskan pesan error berikut secara detail dalam Bahasa Indonesia. Untuk setiap pesan error, berikan:
 
 1. **Terjemahan**:
    - Terjemahan langsung dari pesan error dalam Bahasa Indonesia
@@ -35,4 +37,4 @@ Terjemahkan dan jelaskan pesan error yang diberikan secara detail dalam Bahasa I
    - Pola desain atau teknik yang membantu menghindari masalah
    - Perubahan mindset atau pendekatan yang diperlukan
 
-Sertakan contoh kode perbaikan dengan komentar dalam Bahasa Indonesia jika memungkinkan untuk membantu pemahaman yang lebih baik.
+Sertakan contoh kode perbaikan dengan komentar Bahasa Indonesia jika memungkinkan.

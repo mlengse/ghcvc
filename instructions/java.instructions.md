@@ -1,51 +1,44 @@
 ---
 applyTo: "**/*.java"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
+
 # Java Style Guide
 
-## Naming Conventions
-- Use camelCase for variables and methods
-- Use PascalCase for classes and interfaces
-- Use UPPER_SNAKE_CASE for constants
-- Package names should be all lowercase
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh kode Java di proyek.
 
-## Formatting
-- Use 4 spaces for indentation
-- Keep line lengths below 120 characters
-- Use braces even for single-line blocks
-- Place opening braces on the same line
-- Add a space after keywords like if, for, while
+## Standar Penamaan
+- camelCase untuk variabel dan method
+- PascalCase untuk class dan interface
+- UPPER_SNAKE_CASE untuk konstanta
+- Nama package huruf kecil semua
 
-## Best Practices
+## Format dan Gaya
+- 4 spasi untuk indentasi
+- Panjang baris < 120 karakter
+- Gunakan braces untuk semua blok
+- Braces di baris yang sama
+- Spasi setelah keyword (if, for, while)
+
+## Praktik Terbaik
 - Favor composition over inheritance
-- Make fields private and provide getters/setters as needed
-- Use interfaces to define contracts
-- Minimize method visibility (private, package-private, protected, public)
-- Use meaningful exception names and messages
-- Prefer immutable objects when possible
-- Use streams and functional programming when appropriate
+- Field private, gunakan getter/setter
+- Gunakan interface untuk kontrak
+- Minimalkan visibility method
+- Prefer immutable object
+- Gunakan stream/functional programming jika sesuai
 
-## Exception Handling
-- Use specific exception types
-- Document exceptions in Javadoc
-- Don't catch Exception unless necessary
-- Don't swallow exceptions (empty catch blocks)
-- Use try-with-resources for AutoCloseable resources
+## Pengujian
+- Gunakan JUnit untuk unit test
+- Mock dependency dengan Mockito
+- Uji edge case dan error
+- Ikuti pola AAA (Arrange, Act, Assert)
 
-## Java Collections
-- Use interface types in declarations (List instead of ArrayList)
-- Prefer the Collections Framework over arrays
-- Use generics to provide type safety
-- Consider using immutable collections when appropriate
+## Contoh
+// Tambahkan contoh kode Java sesuai standar di sini jika diperlukan.
 
-## Concurrency
-- Minimize shared mutable state
-- Use java.util.concurrent classes instead of raw synchronization
-- Document thread safety for classes designed for concurrent use
-- Be aware of memory consistency effects
-
-## Testing
-- Use JUnit for unit testing
-- Mock dependencies with Mockito
-- Test edge cases and error scenarios
-- Follow the AAA pattern (Arrange, Act, Assert)
+## Referensi
+- https://www.oracle.com/java/technologies/javase/codeconventions-150003.pdf
+- Dokumentasi internal proyek

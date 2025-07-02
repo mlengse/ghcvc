@@ -1,43 +1,49 @@
 ---
 applyTo: "**/*.py"
+version: "1.0.0"
+last_updated: "2025-07-03"
 ---
 # Python Style Guide
 
-## Naming Conventions
-- Use snake_case for variables and functions
-- Use PascalCase for classes
-- Use UPPER_CASE for constants
-- Prefix private members with underscore (_)
+## Ruang Lingkup
+Instruksi ini berlaku untuk seluruh kode Python di proyek.
 
-## Formatting
-- Follow PEP 8 guidelines
-- Use 4 spaces for indentation
-- Keep line lengths below 88 characters (Black formatter standard)
-- Use double quotes for strings consistently
+## Standar Penamaan
+- snake_case untuk variabel dan fungsi
+- PascalCase untuk kelas
+- UPPER_CASE untuk konstanta
+- Prefix _ untuk anggota privat
 
-## Imports
-- Organize imports in three blocks: standard library, third-party packages, local modules
-- Sort imports alphabetically within each block
-- Avoid wildcard imports (from module import *)
-- Prefer absolute imports over relative imports
+## Format dan Gaya
+- Ikuti PEP 8
+- 4 spasi untuk indentasi
+- Panjang baris < 88 karakter (standar Black)
+- Gunakan double quotes untuk string
 
-## Best Practices
-- Use type hints for function parameters and return values
-- Write docstrings for all public functions, classes, and modules
-- Use context managers (with statement) for resource management
-- Follow the principle of "explicit is better than implicit"
-- Use list/dict/set comprehensions when appropriate
-- Prefer built-in functions and standard library solutions
+## Praktik Terbaik
+- Gunakan type hint
+- Docstring untuk fungsi, kelas, modul
+- Context manager (with) untuk resource
+- "Explicit is better than implicit"
+- List/dict/set comprehension
+- Prefer built-in/standard library
 
-## Error Handling
-- Use specific exception types
-- Only catch exceptions you can handle
-- Use finally blocks for cleanup
-- Prefer context managers for resource management
+## Penanganan Kesalahan
+- Exception spesifik
+- Hanya catch exception yang bisa ditangani
+- finally untuk cleanup
+- Prefer context manager
 
-## Testing
-- Use pytest for unit testing
-- Write small, focused test functions
-- Use descriptive test function names
-- Use fixtures to set up test data
-- Parameterize similar tests
+## Pengujian
+- pytest untuk unit test
+- Fungsi test kecil dan fokus
+- Nama fungsi test deskriptif
+- Fixture untuk setup data
+- Parametrize test serupa
+
+## Contoh
+Tambahkan contoh kode Python sesuai standar di sini jika diperlukan.
+
+## Referensi
+- https://peps.python.org/pep-0008/
+- https://docs.python.org/3/tutorial/

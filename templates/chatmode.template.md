@@ -1,3 +1,10 @@
+<!--
+Petunjuk:
+- Simpan file ini di folder `chatmodes/` dengan nama `<nama-mode>.chatmode.md`.
+- Gunakan metadata front matter berikut:
+  - description: Deskripsi singkat mode chat
+  - tools: Array nama tools yang diizinkan (tanpa #)
+-->
 ---
 description: "Deskripsi singkat tentang tujuan mode chat ini"
 tools: [

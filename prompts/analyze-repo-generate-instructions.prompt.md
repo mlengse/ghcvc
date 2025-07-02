@@ -44,8 +44,19 @@ Isi file instructions harus mencakup:
    - **Testing Patterns**: How tests are typically written for this language in the project
 8. **Integration Guidance**: Provide guidance on how the generated instructions relate to the repository structure and how they should be used with GitHub Copilot.
 
-Berikan instruksi tentang:
+## VS Code Integration
 
+Jika folder custom instructions (`instructions/`, `.github/instructions/`, atau lainnya) belum terdaftar di settings.json, tambahkan entri berikut pada settings.json workspace:
+```json
+"chat.instructionsFilesLocations": [
+  "./instructions",
+  "./.github/instructions",
+  "./folder-lain"
+]
+```
+Pastikan perubahan tersimpan agar Copilot mengenali file instructions di folder tersebut.
+
+Berikan instruksi tentang:
 - Di mana menyimpan file instructions di struktur repository (`instructions/`)
 - Cara menggunakan instructions di dalam VS Code
 - Cara membagikan instructions ke anggota tim
