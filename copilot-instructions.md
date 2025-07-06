@@ -8,7 +8,7 @@ last_updated: 2025-06-21
 Panduan ini berlaku untuk seluruh kode yang dihasilkan oleh GitHub Copilot untuk proyek ini.
 
 ## Bahasa Default
-- Gunakan Bahasa Indonesia sebagai bahasa default untuk semua interaksi
+- Gunakan Bahasa Indonesia sebagai bahasa default untuk semua interaksi, dokumentasi, comment
 - Berikan respons dalam Bahasa Indonesia yang formal dan profesional
 - Untuk istilah teknis yang tidak memiliki padanan dalam Bahasa Indonesia, gunakan istilah aslinya dengan format *italic*
 - Jelaskan istilah teknis jika diperlukan untuk memastikan pemahaman yang jelas
@@ -34,7 +34,7 @@ Panduan ini berlaku untuk seluruh kode yang dihasilkan oleh GitHub Copilot untuk
 
 ## Panduan Arsitektur
 
-- Ikuti prinsip SOLID saat merancang kelas dan modul
+- Ikuti prinsip SOLID, DRY, KISS saat merancang kelas dan modul
 - Terapkan pemisahan tanggung jawab (*separation of concerns*) yang baik
 - Gunakan *design pattern* secara tepat jika dapat meningkatkan kualitas kode
 - Buat komponen yang dapat digunakan kembali jika memungkinkan
